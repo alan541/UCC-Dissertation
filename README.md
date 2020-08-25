@@ -12,4 +12,4 @@ Please note that to run the full 'Dissertation Main Code', all that is needed is
 
 Separate code was created in google colab for analysis by Artificial Neural Networks, and this code is entitled 'Dissertation (Full Data)' and Dissertation '(Filtered Data)'. The files utilised directly by the former, and provided, are 'DLtrain', 'DLtest', and 'tenniste'. The files utilised by the latter, and provided, are 'DLMtr', 'DLmte' and 'minnotest'.
 
-Separate code was also created in google colab (with also some preparatory code in 'Dissertation Main Code') for the reinforcement learning test section. The files utilised and provided are 'RL_Probs' and 'RLw_l'.
+Separate code was also created in google colab (with also some preparatory code in 'Dissertation Main Code') for the reinforcement learning test section. The files utilised and provided are 'RLprobs' and 'RLw_l'.
