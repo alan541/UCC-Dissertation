@@ -62,8 +62,6 @@ write.csv(odds, path1)
 
 odds2 = read.csv("D://Odds2.csv")
 
-## next line may be needed to remove any redandant first column if created from previous write to csv (not required if first column = tourney_name)
-
 
 for (j in 1:2609){
   for(i in 1:2609){

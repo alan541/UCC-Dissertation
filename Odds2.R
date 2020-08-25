@@ -41,7 +41,6 @@ write.csv(odds, path1)
 
 odds2 = read.csv("D://Odds4.csv")
 
-## next line may be needed to remove any redandant first column if created from previous write to csv (not required if first column = tourney_name)
 
 
 
