@@ -10,4 +10,4 @@ The final odds for use is contained in 'Project_pt5', but if you wish to see the
 
 Please note that to run the full 'Dissertation Main Code', all that is needed is the original data file 'Project_pt5'. The other completed files are provided is case the user wished to jump forward.
 
-Separate code was created in google colab for analysis by Artificial Neural Networks, and this code is entitled '
+Separate code was created in google colab for analysis by Artificial Neural Networks, and this code is entitled 'Dissertation (full
