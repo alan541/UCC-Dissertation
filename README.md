@@ -1,6 +1,6 @@
 # UCC-Dissertation
 
-This is intended as an explanatory guide to the files listed here, which are all the files necessary to full my full dissertation project.
+This is intended as an explanatory guide to the files listed here, which are all the files necessary to run my full dissertation project.
 
 The main original data was obtained with thanks from https://github.com/JeffSackmann/tennis_atp, under licence from https://creativecommons.org/licenses/by-nc-sa/4.0/, for non commercial use only. Some small addtional data was added occasionally from https://www.atptour.com.  The betting odds data was sourced from www.tennis-data.co.uk. 
 
