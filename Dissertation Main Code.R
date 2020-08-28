@@ -1,16 +1,12 @@
 ## read in original incomplete data file - please change pathway to as required 
 
-## alternatively jump to line 1642 and add appropriate read command to read in completed data file or subsequent train and test files (see github 'read me' for details)
+## alternatively jump to line 1642 and add appropriate commands to read in completed data file or subsequent train and test files (and beware of redundant first column - see github 'read me' for details)
 
 path = "D://Project_pt5.csv"
 
 tennis = read.csv(path)
 
 rm(list = ls())
-
-### next may be needed to remove redundant column becasue of any previous write to csv creating new first column (not necessary if first column = tourney_country)
-
-tennis = tennis[,-1]
 
 
 # make sure input file has sets breakdown appearing as text and not dates (necessary to check for original incomplete data file only, for calculation of tie break data) 
@@ -3320,9 +3316,7 @@ hpbsfil()
 
 
 
-## Betting and Money Management altertives for Random Forest Full Data Model 
-
-####### betting startegies
+## New Betting and Money Management strategies for Random Forest Full Data Model 
 
 # Recreate predcit values for Random Forest Full Data Model 
 
@@ -3418,7 +3412,7 @@ mprbsf = function(){
 mprbsf()
 
 
-#MM Stategy #1 - BS#1 with Kelly Criterion
+#MM Strategy #1 - BS#1 with Kelly Criterion
 
 eprkcf = function(){
 
@@ -3460,7 +3454,7 @@ eprkcf = function(){
 eprkcf()
 
 
-#MM Stategy #1 - BS#2 with Kelly Criterion
+#MM Strategy #1 - BS#2 with Kelly Criterion
 
 mprkcf = function(){
   
@@ -3502,7 +3496,7 @@ mprkcf = function(){
 mprkcf()
 
 
-#MM Stategy #2 - BS#1 with Kelly Criterion reversed
+#MM Strategy #2 - BS#1 with Kelly Criterion reversed
 
 eprrkcf = function(){
 
@@ -3544,7 +3538,7 @@ eprrkcf = function(){
 eprrkcf()
 
 
-#MM Stategy #2 - BS#2 with Kelly Criterion reversed
+#MM Strategy #2 - BS#2 with Kelly Criterion reversed
 
 mprrkcf = function(){
 
@@ -3588,7 +3582,7 @@ mprrkcf()
 
 # Betting strategies from first part of project excluded here as will not always work with Kelly Criterion
 
-#MM Stategy #3 - BB#1 with % of Bankroll Criterion
+#MM Strategy #3 - BB#1 with % of Bankroll Criterion
 
 eprbcf = function(){
 
@@ -3642,7 +3636,7 @@ eprbcf = function(){
 eprbcf()
 
 
-#MM Stategy #3 - BS#2 with % of Bankroll Criterion
+#MM Strategy #3 - BS#2 with % of Bankroll Criterion
 
 mprbcf = function(){
 
@@ -3697,7 +3691,7 @@ mprbcf()
 
 
 
-#MM Stategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
 
 favbcf = function(){
 
@@ -3751,7 +3745,7 @@ favbcf = function(){
 favbcf()
 
   
-#MM Stategy #3 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #3 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
 
 hpbcf = function(){
 
@@ -3804,9 +3798,7 @@ hpbcf = function(){
 hpbcf()
 
 
-## Betting and Money Management altertives for Random Forest Filtered Data Model 
-
-####### betting startegies
+## New Betting and Money Management strategies for Random Forest Filtered Data Model 
 
 # Recreate predict value for Random Forest Filtered Data Model
 
@@ -3904,7 +3896,7 @@ mprbsfil = function(){
 mprbsfil()
 
 
-#MM Stategy #1 - BS#1 with Kelly Criterion
+#MM Strategy #1 - BS#1 with Kelly Criterion
 
 eprkcfil = function(){
 
@@ -3946,7 +3938,7 @@ eprkcfil = function(){
 eprkcfil()
 
 
-#MM Stategy #1 - BS#2 with Kelly Criterion
+#MM Strategy #1 - BS#2 with Kelly Criterion
 
 mprkcfil = function(){
 
@@ -3988,7 +3980,7 @@ mprkcfil = function(){
 mprkcfil()
 
 
-#MM Stategy #2 - BS#1 with Kelly Criterion reversed
+#MM Strategy #2 - BS#1 with Kelly Criterion reversed
 
 eprrkcfil = function(){
 
@@ -4031,7 +4023,7 @@ eprrkcfil()
 
 
 
-#MM Stategy #2 - BS#2 with Kelly Criterion reversed
+#MM Strategy #2 - BS#2 with Kelly Criterion reversed
 
 mprrkcfil = function(){
 
@@ -4077,7 +4069,7 @@ mprrkcfil()
 # Betting strategies from first part of project excluded here as will not always work with Kelly Criterion
 
 
-#MM Stategy #3 - BS#1 with % of Bankroll Criterion
+#MM Strategy #3 - BS#1 with % of Bankroll Criterion
 
 eprbcfil = function(){
 
@@ -4131,7 +4123,7 @@ eprbcfil = function(){
 eprbcfil()
 
 
-#MM Stategy #3 - BS#2 with % of Bankroll Criterion
+#MM Strategy #3 - BS#2 with % of Bankroll Criterion
 
 mprbcfil = function(){
 
@@ -4185,7 +4177,7 @@ mprbcfil = function(){
 mprbcfil()
 
 
-#MM Stategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
 
 
 favbcfil = function(){
@@ -4240,7 +4232,7 @@ favbcfil = function(){
 favbcfil()
 
 
-#MM Stategy #3 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #3 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
 
 hpbcfil = function(){
 
@@ -4295,7 +4287,7 @@ hpbcfil()
 
 
 
-##### repeat all above for SVM's
+#### repeat all above for SVM's
 
 
 # Recreate predict value for SVM Full Data Model
@@ -4447,7 +4439,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #1 - BS#1 with Kelly Criterion
+#MM Strategy #1 - BS#1 with Kelly Criterion
 
 bet = 0
 win = 0
@@ -4483,7 +4475,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #1 - BS#2 with Kelly Criterion
+#MM Strategy #1 - BS#2 with Kelly Criterion
 
 bet = 0
 win = 0
@@ -4519,7 +4511,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - BS#1 with Kelly Criterion reversed
+#MM Strategy #2 - BS#1 with Kelly Criterion reversed
 
 bet = 0
 win = 0
@@ -4555,7 +4547,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - BS#2 with Kelly Criterion reversed
+#MM Strategy #2 - BS#2 with Kelly Criterion reversed
 
 bet = 0
 win = 0
@@ -4591,7 +4583,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - BS#1 with % of Bankroll Criterion
+#MM Strategy #3 - BS#1 with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -4639,7 +4631,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - BS#2 with % of Bankroll Criterion
+#MM Strategy #3 - BS#2 with % of Bankroll Criterion
 
 
 nb = 0
@@ -4688,7 +4680,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #3 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -4736,7 +4728,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - bet on high probabilities betting staregy in first part project with % of Bankroll Criterion
+#MM Strategy #3 - bet on high probabilities betting staregy in first part project with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -4858,7 +4850,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #1 - BS#1 with Kelly Criterion
+#MM Strategy #1 - BS#1 with Kelly Criterion
 
 bet = 0
 win = 0
@@ -4895,7 +4887,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #1 - BS#2 with Kelly Criterion
+#MM Strategy #1 - BS#2 with Kelly Criterion
 
 bet = 0
 win = 0
@@ -4931,7 +4923,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - BS#1 with Kelly Criterion reversed
+#MM Strategy #2 - BS#1 with Kelly Criterion reversed
 
 bet = 0
 win = 0
@@ -4967,7 +4959,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - BS#2 with Kelly Criterion reversed
+#MM Strategy #2 - BS#2 with Kelly Criterion reversed
 
 bet = 0
 win = 0
@@ -5003,7 +4995,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - BB#1 with % of Bankroll Criterion
+#MM Strategy #3 - BB#1 with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -5051,7 +5043,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #3 - BS#2 with % of Bankroll Criterion
+#MM Strategy #3 - BS#2 with % of Bankroll Criterion
 
 
 nb = 0
@@ -5100,7 +5092,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #2 - bet on favourite betting staregy in first part of project with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -5148,7 +5140,7 @@ ret = win/bet
 ret
 
 
-#MM Stategy #2 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
+#MM Strategy #2 - bet on high probabilities betting staregy in first part of project with % of Bankroll Criterion
 
 nb = 0
 bet = 0
@@ -5260,7 +5252,7 @@ r2 = sample(1:3,1)
 r2
 
 
-####  reinforcement learning data prep ####
+###  reinforcement learning data prep 
 
 # Create predict values for Random Forest Full Data Model 
 
@@ -5312,7 +5304,7 @@ axis(1, cex.axis =2)
 lines(Bankroll, col =2)
 
 
-#### PCA analysis test ####
+### PCA comparison test
 
 SMLtrain2 = SMLtrain1[,-29]
 
@@ -5386,10 +5378,51 @@ testb1 = testb1[ ,-c(7:29)]
 testb1[,7] = SMLtest1[,29]
 
 
-# testing PCA model with SVM and using betting and money management strategies 
+## testing PCA model with SVM and using betting and money management strategies 
 
-set.seed(46)
-learner = makeLearner("classif.svm", predict.type = "prob", cost = 4, nu = 8, kernel = "polynomial")
+# retest first for best kernel
+
+svm_retest1 = function(kern){
+  
+  learner = makeLearner("classif.svm", kernel = kern)
+  task = makeClassifTask(data = trainb1, target ="V7")
+  
+  rdesc= makeResampleDesc("CV", iters = 10)
+  
+  result= resample("classif.svm", task, rdesc, measures = mmce)
+  print(result)
+  
+  
+}
+
+svm_retest1("polynomial")
+
+svm_retest1("sigmoid")
+
+svm_retest1("linear")
+
+svm_retest1("radial")
+
+
+# new grid search for best cost and nu parameters and with kernel from above  
+
+set.seed(47)
+learner = makeLearner("classif.svm", kernel = "linear")
+
+ps = makeParamSet(makeIntegerParam("cost", lower = 0.6, upper = 10), makeIntegerParam("nu", lower = -5, upper = 10))
+
+ctrl = makeTuneControlGrid()
+
+task = makeClassifTask(data = trainb1, target ="V7")
+rdesc= makeResampleDesc("CV", iters = 3)
+
+res = tuneParams(learner, task = task, resampling = rdesc, par.set = ps, control = ctrl, measures = mmce)
+
+
+# test model based on results of above 
+
+set.seed(48)
+learner = makeLearner("classif.svm", predict.type = "prob", cost = 9, nu = 5, kernel = "linear")
 
 task = makeClassifTask(data = trainb1, target ="V7")
 
@@ -5402,7 +5435,6 @@ prediction = predict(model, newdata = testb1)
 accuracy = performance(prediction, measures = mmce)
 print(accuracy)
 
-print(calculateConfusionMatrix(prediction))
 
 rdesc= makeResampleDesc("CV", iters = 10)
 result= resample("classif.svm", cost = 4, nu = 8, kernel = "polynomial", task, rdesc, measures = mmce)
@@ -5438,12 +5470,152 @@ hpbcf()
 # statistical test of results 
 
 org = c(-2, -2.3, 0.7, 0.3, -1.5, -1.9, -0.3, -1.8, -1.4, -2, 0, -1.8)
-pcared = c(-4.6, -4.4, -0.5, -0.6, 1, -0.2, -1.5, 1.5, -1.8, -1.9, -2.2, -1.7)
+pcared = c(-5.8, -5.7, -3.8, -4, -2.9, -2.6, -2.8, -2.9, -3.3, -3.1, -2.8, -3.5)
 
 mean(org)
 mean(pcared)
 
 t.test(org, pcared,alternative = "two.sided", var.equal = FALSE)
+
+
+### comprison of separate player statistics data sets to combined statistics data sets
+
+MLtrainsps = MLtrain1
+MLtestsps = MLtest1
+
+ws = c(13,23,89,90,38,39,40,41,43,44,45,46,48,49,50,51,108,109,110,111,129,130,131,132,97,98,125,137,112)
+ls = c(17,24,91,92,70,71,72,73,75,76,77,78,80,81,82,83,121,122,123,124,133,134,135,136,99,100,126,138,113)
+
+MLtrainsps[,31] = MLtrainsps[,29]
+MLtrainsps[,29] = MLtrainsps[,30]
+MLtrainsps[,30] = MLtrainsps[,31]
+
+MLtestsps[,31] = MLtestsps[,29]
+MLtestsps[,29] = MLtestsps[,30]
+MLtestsps[,30] = MLtestsps[,31]
+
+colnames(MLtrainsps)[29] = "AS_rank"
+colnames(MLtrainsps)[30] = "AS_win_lose_binary"
+
+colnames(MLtestsps)[29] = "AS_rank"
+colnames(MLtestsps)[30] = "AS_win_lose_binary"
+
+for(i in 1:5325){
+  for(j in 1:29){
+    if(MLtrainsps[i,30] ==1){
+      MLtrainsps[i,j] = tennistr[i, ws[j]]
+    } else{
+      MLtrainsps[i,j] = tennistr[i, ls[j]]
+    }
+  }
+}
+
+
+for(i in 1:5325){
+  for(j in 1:29){
+    if(MLtrainsps[i,30] ==1){
+      MLtrainsps[i,j+30] = tennistr[i, ls[j]]
+    } else{
+      MLtrainsps[i,j+30] = tennistr[i, ws[j]]
+    }
+  }
+}
+
+
+for(i in 1:2282){
+  for(j in 1:29){
+    if(MLtestsps[i,30] ==1){
+      MLtestsps[i,j] = tenniste[i, ws[j]]
+    } else{
+      MLtestsps[i,j] = tenniste[i, ls[j]]
+    }
+  }
+}
+
+
+for(i in 1:2282){
+  for(j in 1:29){
+    if(MLtestsps[i,30] ==1){
+      MLtestsps[i,j+30] = tenniste[i, ls[j]]
+    } else{
+      MLtestsps[i,j+30] = tenniste[i, ws[j]]
+    }
+  }
+}
+
+
+## testing model with RF and using betting and money management strategies 
+
+# retest first for optimal hyperparamters
+
+set.seed(49)
+learner = makeLearner("classif.randomForest")
+
+ps = makeParamSet(makeIntegerParam("ntree", lower = 10, upper = 200), makeIntegerParam("mtry", lower = 4, upper = 25))
+
+ctrl = makeTuneControlGrid()
+
+task = makeClassifTask(data = MLtrainsps, target ="AS_win_lose_binary")
+rdesc= makeResampleDesc("CV", iters = 3)
+
+res = tuneParams(learner, task = task, resampling = rdesc, par.set = ps, control = ctrl, measures = mmce)
+
+
+# test model based on results of above 
+
+set.seed(50)
+learner = makeLearner("classif.randomForest", ntree = 200, mtry = 6, predict.type = "prob")
+
+task = makeClassifTask(data = MLtrainsps, target ="AS_win_lose_binary")
+
+train.set = c(1:nrow(MLtrainsps)) 
+
+
+model = mlr::train(learner, task, subset = train.set)
+prediction = predict(model, newdata = MLtestsps)
+
+accuracy = performance(prediction, measures = mmce)
+print(accuracy)
+
+rdesc= makeResampleDesc("CV", iters = 10)
+result= resample("classif.randomForest", ntree = 200, mtry = 4, task, rdesc, measures = mmce)
+print(result)
+
+
+
+favbsf()
+
+hpbsf()
+
+eprbsf()
+
+mprbsf()
+
+eprkcf()
+
+mprkcf()
+
+eprrkcf()
+
+mprrkcf()
+
+eprbcf()
+
+mprbcf()
+
+favbcf()
+
+hpbcf()
+
+# statistical test of results 
+
+cs = c(-7.1, -7.1, -6.3, -6.7, -3.2, -3.4, -6.7, -2.6, -2.2, -2.9, -5.5, -1.2)
+sps = c(-8.3, -7.2, -6.1, -6.4, -3.8, -4.4, -7, -3.2, -3.3, -3.8, -7.4, -2.1)
+
+mean(cs)
+mean(sps)
+
+t.test(cs, sps,alternative = "two.sided", var.equal = FALSE)
 
 
 
